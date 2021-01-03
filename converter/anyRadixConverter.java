@@ -3,26 +3,7 @@
 import java.util.Scanner;
 
 public class anyRadixConverter {
-
-    private baseOne() {
-        if (targetRadix == 1) {
-            if (sourceRadix == 10) {
-                for (int i = 1; i <= sourceNumber; i++) {
-                    System.out.print("1");
-                }
-                System.out.print("\n");
-            } else {
-                int decTemp = Integer.parseInt(Integer.toString(sourceNumber), sourceRadix);
-                for (int j = 1; j <= decTemp; j++) {
-                    System.out.print("1");
-                }
-                System.out.print("\n");
-            }
-        }
-    }
-
     public static void main(String[] args) {
-
         Scanner scanner = new Scanner(System.in);
 
         int sourceRadix = scanner.nextInt();
